@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM Learning Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>STEM Learning Arcade</h1>
+    <select id="langSelect">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+    </select>
+  </header>
+
+  <main id="menu">
+    <h2>Choose a Game</h2>
+    <button onclick="startGame('quiz')">📝 Quiz</button>
+    <button onclick="startGame('memory')">🧠 Memory Match</button>
+    <button onclick="startGame('dragdrop')">🔗 Drag & Drop</button>
+    <button onclick="startGame('math')">➕ Math Challenge</button>
+    <h3>Total XP: <span id="xp">0</span></h3>
+  </main>
+
+  <!-- Game Areas -->
+  <section id="gameArea" class="hidden"></section>
+  <section id="resultBox" class="hidden"></section>
+
+  <footer>
+    <p>Made for SIH 🚀 | Works Offline</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
